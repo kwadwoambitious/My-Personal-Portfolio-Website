@@ -78,6 +78,7 @@ switchButton.addEventListener('click', () =>{
   if(document.body.classList.contains('is-toggled')){
     document.body.classList.remove('is-toggled');
     switchButton.classList.remove('is-switched');
+    switchButton.innerHTML = '<i class="fa-solid fa-moon"></i>';
     navLinks.forEach(function(link){
         link.style.color = '#fbfbfe';
     });
@@ -85,7 +86,7 @@ switchButton.addEventListener('click', () =>{
         value.style.background = '#fbfbfe';
         value.style.color = '';
     });
-    switchButton.style.background = '#222';
+    switchButton.style.color = '#222';
     header.style.background = '#222';
     lightAndDarkContainer.style.background = '#fbfbfe';
     mainMenu.classList.remove('light-mode');
@@ -97,9 +98,10 @@ switchButton.addEventListener('click', () =>{
   */
   else{
     document.body.classList.add('is-toggled');
-    switchButton.style.background = '#fbfbfe';
+    switchButton.style.color = '#fbfbfe';
     switchButton.classList.add('is-switched');
-    lightAndDarkContainer.style.background = '#222';
+    switchButton.innerHTML = '<i class="fa-solid fa-sun"></i>';
+    lightAndDarkContainer.style.background = 'black';
     header.style.background = '#fbfbfe';
     navLinks.forEach(function(link){
         link.style.color = '#222';

@@ -100,9 +100,9 @@ nav .main-menu a:hover{
 
 /* light and dark mode styling */
 .light-and-dark-container{
-    width: 60px;
-    height: 30px;
-    padding-top:  3px;
+    width: 55px;
+    height: 27px;
+    padding-top:  2px;
     padding-bottom: 2px;
     background-color: var(--white-color);
     border-radius: 60px;
@@ -112,13 +112,11 @@ nav .main-menu a:hover{
     margin-left: 20px;
 }
 .light-and-dark-container .switch-button{
-    width: 26px;
     height: 100%;
-    margin-left: 5px;
-    background-color: var(--dark-color);
-    border-radius: 50%;
+    margin-left: 7px;
     transition: 0.5s ease-in-out;
     cursor: pointer;
+    color: black;
 }
 .is-switched{
     transform: translateX(23px);
