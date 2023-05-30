@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--website's title-->
-    <title>Ebenezer</title>
+    <title>Antwi Ebenezer</title>
     <!--website's favicon-->
     <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon">
     <!--linking css file to the html file-->
@@ -218,33 +218,36 @@
             If yes, then please don't hesitate to send me a message by filling the form below:
         </p>
         <!--contact container-->
-        <form class="contact">
-                <label for="input" id="first-name">
+        <form class="contact" method="POST" action="https://getform.io/f/cbe23328-67b2-419c-b253-58fa67eb45e0">
+                <label for="input">
                     <!--first name input field-->
-                    <input type="text" name="firstname" id="first-name" class="input-field" placeholder="Enter your first name"
-                    style="font-family: 'Kanit', sans-serif; font-size: 1.7rem;" required>
+                    <input type="text" name="First Name" id="first-name" class="input-field" required
+                    placeholder="Enter your first name" autocomplete="off"
+                    style="font-family: 'Kanit', sans-serif; font-size: 1.7rem;" >
+                    <span style="font-family: 'Kanit', sans-serif;" class="error"></span>
                 </label>
 
-                <label for="input" id="last-name">
+                <label for="input">
                     <!--last name input field-->
-                    <input type="text" name="lastname" id="last-name" class="input-field" placeholder="Enter your last name" 
-                    style="font-family: 'Kanit', sans-serif; font-size: 1.7rem;" required>
+                    <input type="text" name="Last Name" id="last-name" class="input-field" required placeholder="Enter your last name" autocomplete="off"
+                    style="font-family: 'Kanit', sans-serif; font-size: 1.7rem;">
+                    <span style="font-family: 'Kanit', sans-serif;" class="error"></span>
                 </label>
 
-                <label for="input" id="email">
+                <label for="input">
                     <!--email input field-->
-                    <input type="email" name="email" id="email" class="input-field" placeholder="Enter your email address" 
-                    style="font-family: 'Kanit', sans-serif; font-size: 1.7rem;" required>
+                    <input type="email" name="Email Address" id="email" class="input-field" placeholder="Enter your email address" autocomplete="off" required
+                    style="font-family: 'Kanit', sans-serif; font-size: 1.7rem;">
+                    <span style="font-family: 'Kanit', sans-serif;" class="error"></span>
                </label>
 
-               <label id="message">
-                    <!--message input field-->
-                    <textarea id="message" name="message" cols="50" rows="3" class="input-field" placeholder="Enter your message..." 
-                    style="font-family: 'Kanit', sans-serif; font-size: 1.7rem;" required>
-                    </textarea>
+               <label>
+                <textarea placeholder="Enter your message here..." class="input-field" name="Message"
+                required id="message" rows="3" columns="50" style="font-family: 'Kanit', sans-serif; font-size: 1.7rem;"></textarea>
+                <span style="font-family: 'Kanit', sans-serif;" class="error"></span>
                </label>
                <!--submit button-->
-               <input type="submit" name="submit" id="submit" class="input-field" value="send">
+               <input type="submit" name="submit" id="submit" class="input-field submit-button" value="send">
         </form>
     </section>
 
@@ -290,5 +293,8 @@
     <script>
             AOS.init();
     </script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+
 </body>
 </html>

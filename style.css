@@ -355,6 +355,10 @@ nav .main-menu a:hover{
     margin: 40px auto 0 auto;
     width: 90%;
 }
+.contact label{
+    display: block;
+    margin-bottom: 10px;
+}
 .contact{
     max-width: 500px;
     margin: 15px auto 0 auto;
@@ -365,11 +369,11 @@ nav .main-menu a:hover{
 .contact input{
     display: block;
     width: 100%;
-    margin: 0px 0 10px 0;
     padding: 15px;
     outline: none;
     border-radius: 3px;
     border: none;
+    margin-bottom: 5px;
 }
 .contact input:focus{
     border: 2px solid var(--light-blue);
@@ -398,6 +402,15 @@ nav .main-menu a:hover{
     margin: 20px 0 0 0;
     padding: 10px;
 }
+
+/* error message styling */
+/* .error{
+    color: red;
+    font-size: 1.5rem;
+}
+.error-border{
+    border: 2px solid red;
+} */
 
 /* social media section styling */
 #socials{
