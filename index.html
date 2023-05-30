@@ -218,32 +218,32 @@
             If yes, then please don't hesitate to send me a message by filling the form below:
         </p>
         <!--contact container-->
-        <form class="contact" method="POST" action="https://getform.io/f/cbe23328-67b2-419c-b253-58fa67eb45e0">
+        <form class="contact" method="POST" action="https://getform.io/f/cbe23328-67b2-419c-b253-58fa67eb45e0" onsubmit="reset(); return false;">
                 <label for="input">
                     <!--first name input field-->
-                    <input type="text" name="First Name" id="first-name" class="input-field" required
+                    <input type="text" name="First Name" id="first-name" class="input-field"
                     placeholder="Enter your first name" autocomplete="off"
-                    style="font-family: 'Kanit', sans-serif; font-size: 1.7rem;" >
+                    style="font-family: 'Kanit', sans-serif; font-size: 1.7rem;"  required>
                     <span style="font-family: 'Kanit', sans-serif;" class="error"></span>
                 </label>
 
                 <label for="input">
                     <!--last name input field-->
-                    <input type="text" name="Last Name" id="last-name" class="input-field" required placeholder="Enter your last name" autocomplete="off"
-                    style="font-family: 'Kanit', sans-serif; font-size: 1.7rem;">
+                    <input type="text" name="Last Name" id="last-name" class="input-field" placeholder="Enter your last name" autocomplete="off"
+                    style="font-family: 'Kanit', sans-serif; font-size: 1.7rem;" required>
                     <span style="font-family: 'Kanit', sans-serif;" class="error"></span>
                 </label>
 
                 <label for="input">
                     <!--email input field-->
-                    <input type="email" name="Email Address" id="email" class="input-field" placeholder="Enter your email address" autocomplete="off" required
-                    style="font-family: 'Kanit', sans-serif; font-size: 1.7rem;">
+                    <input type="email" name="Email Address" id="email" class="input-field" placeholder="Enter your email address" autocomplete="off"
+                    style="font-family: 'Kanit', sans-serif; font-size: 1.7rem;"  required>
                     <span style="font-family: 'Kanit', sans-serif;" class="error"></span>
                </label>
 
                <label>
                 <textarea placeholder="Enter your message here..." class="input-field" name="Message"
-                required id="message" rows="3" columns="50" style="font-family: 'Kanit', sans-serif; font-size: 1.7rem;"></textarea>
+                id="message" rows="3" columns="50" style="font-family: 'Kanit', sans-serif; font-size: 1.7rem;" required ></textarea>
                 <span style="font-family: 'Kanit', sans-serif;" class="error"></span>
                </label>
                <!--submit button-->
