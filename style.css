@@ -328,7 +328,7 @@ nav .main-menu a:hover{
     text-align: center;
 }
 .awards img{
-    max-width: 500px;
+    max-width: 520px;
     height: 300px;
     object-fit: cover;
     transition: transform 0.3s 0.1s ease-in-out;
