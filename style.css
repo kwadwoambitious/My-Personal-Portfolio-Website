@@ -184,22 +184,6 @@ nav .main-menu a:hover{
     border-color: var(--light-blue);
 }
 
-.arrow a{
-    color: var(--white-color);
-    font-size: 3.2rem;
-    text-decoration: none;
-    display: block;
-    margin-top: 70px;
-    background-color: var(--light-blue);
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    box-shadow: 5px 7px 25px rgba(0, 0, 0, 0.5);
-}
-
 /* each section title styling */
 .heading{
     font-size: 4rem;
@@ -418,17 +402,6 @@ nav .main-menu a:hover{
     margin: 20px 0 0 0;
     padding: 10px;
 }
-
-/* error message styling */
-/* .error{
-    color: red;
-    font-size: 1.5rem;
-}
-.error-border{
-    border: 2px solid red;
-} */
-
-/* social media section styling */
 #socials{
     padding-bottom: 60px;
     text-align: center;
