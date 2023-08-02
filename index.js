@@ -114,58 +114,9 @@ switchButton.addEventListener('click', () =>{
   }
 });
 
-//form validation
-/*
-const firstNameInput = document.querySelector('#first-name');
-const lastNameInput = document.querySelector('#last-name');
-const emailInput = document.querySelector('#email');
-const messageInput = document.querySelector('#message');
-const errorMessage = document.querySelectorAll('.error');
+// Preloader disappears when the page finish loading
+const preloader = document.querySelector('.container');
 
-
-const submitButton = document.querySelector('.submit-button');
-
-
-function sendEmail(){
-    if(firstNameInput.value.length < 1){
-        errorMessage[0].innerHTML = 'Name cannot be blank';
-        firstNameInput.classList.add('error-border');
-    }
-    else{
-        errorMessage[0].innerHTML = 'Filled correctly!';
-        errorMessage[0].style.color = '#28A745';
-        firstNameInput.classList.remove('error-border');
-    };
-
-    if(lastNameInput.value.length < 1){
-        errorMessage[1].innerHTML = 'Name cannot be blank';
-        lastNameInput.classList.add('error-border');
-    }
-    else{
-        errorMessage[1].innerHTML = 'Filled correctly!';
-        errorMessage[1].style.color = '#28A745';
-        lastNameInput.classList.remove('error-border');
-    };
-    let emailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-    ///^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-    if(emailInput.value.match(emailFormat)){
-        errorMessage[2].innerHTML = 'Valid email address';
-        errorMessage[2 ].style.color = '#28A745';
-        emailInput.classList.remove('error-border');
-    }
-    else{
-        errorMessage[2].innerHTML = 'Invalid email address';
-        emailInput.classList.add('error-border');
-    };
-
-    if(messageInput.value.length < 1){
-        errorMessage[3].innerHTML = 'Please enter a message';
-        messageInput.classList.add('error-border');
-    }
-    else{
-        errorMessage[3].innerHTML = 'Message entered!';
-        errorMessage[3].style.color = '#28A745';
-        messageInput.classList.remove('error-border');
-    }
-}
-*/
+window.addEventListener('load', function(){
+    preloader.style.display = 'none';
+})
